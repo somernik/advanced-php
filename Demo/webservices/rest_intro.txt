@@ -1,0 +1,32 @@
+REST APIs
+
+REpresentational State Transfer
+
+In terms of creating a CRUD interface, you already know how to do this:
+
+create.php
+read.php
+update.php
+delete.php
+
+When creating a REST interface (Web Service), instead of using multiple
+URLs, you will be accessing your interface using a single URL
+
+In the interface we will create over the next few weeks,
+this REST service will provide for:
+
+Creating, reading, updating, deleting records.
+
+When using a REST interface (or Web Service API), you use different HTTP
+verbs to specify what you want TO DO with the resource.
+
+The resource is spcified by the URL.
+the action is specified by the HTTP VERB.
+
+So, for our CRUD application, we will use the following VERBs with the
+following actions:
+
+POST    -> for creating records
+GET     -> for reading records
+PUT     -> for updating records
+DELETE  -> for deleting records
