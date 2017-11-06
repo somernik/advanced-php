@@ -1,20 +1,19 @@
 <?php
-    require_once("StudentManager.php");
+    require_once("TaskManager.php");
     
     $httpVerb = $_SERVER['REQUEST_METHOD']; // POST, GET, PUT, DELETE
     
-    $studentManager = new StudentManager();
+    $taskManager = new TaskManager();
     
     switch ($httpVerb)
     {
         case "POST":
             // Create
-            if  (isset($_POST['name']) && isset($_POST['email']))
+            if  (isset($_POST['desc']))
             {
-                $name = $_POST['name'];
-                $email = $_POST['email'];
-                
-                echo $studentManager->create($name, $email);
+                $desc = $_POST['desc'];
+                echo "create";
+                //echo $taskManager->create($desc);
             }
             else
             {
@@ -27,11 +26,13 @@
             header("Content-Type: application/json");
             if (isset($_GET['id'])) // Read (by Id)
             {
-                echo $studentManager->readById($_GET['id']);
+                //echo $taskManager->read($_GET['id']);
+                echo "read id";
             }
             else
             {
-                echo $studentManager->read();
+                echo "read all";
+                //echo $taskManager->readAll();
             }
             break;
             
@@ -42,10 +43,9 @@
             if (isset($putVars['id']))
             {
                 $id = $putVars['id'];
-                $name = $putVars['name'];
-                $email = $putVars['email'];
-                
-                echo $studentManager->update($id, $name, $email);
+                $newDesc = $putVars['desc'];
+                echo "update";
+                //echo $taskManager->update($id, $newDesc);
             }
             else
             {
@@ -61,7 +61,8 @@
             if (isset($deleteVars['id']))
             {
                 $id = $deleteVars['id'];
-                echo $studentManager->delete($id);
+                echo "delete";
+                //echo $taskManager->delete($id);
             }
             else
             {
