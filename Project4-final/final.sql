@@ -1,0 +1,188 @@
+-- Adminer 4.3.1 MySQL dump
+
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+DROP TABLE IF EXISTS `requests`;
+CREATE TABLE `requests` (
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `requestType` varchar(10) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(500) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `requests` (`created`, `requestType`, `id`, `username`) VALUES
+('2017-11-14 23:24:10',	'GET',	1,	'sarah'),
+('2017-11-14 23:23:45',	'GET ALL',	2,	'sarah'),
+('2017-11-14 23:36:57',	'GET ALL',	3,	'sarah'),
+('2017-11-14 23:38:17',	'GET',	4,	'sarah'),
+('2017-11-14 23:38:22',	'GET',	5,	'sarah'),
+('2017-11-14 23:38:34',	'GET ALL',	6,	'sarah'),
+('2017-11-14 23:38:46',	'POST',	7,	'sarah'),
+('2017-11-18 20:33:26',	'GET ALL',	8,	'sarah'),
+('2017-11-18 20:34:15',	'GET ALL',	9,	'sarah'),
+('2017-11-18 20:34:15',	'GET ALL',	10,	'sarah'),
+('2017-11-18 20:35:20',	'GET ALL',	11,	'sarah'),
+('2017-11-18 20:35:20',	'GET ALL',	12,	'sarah'),
+('2017-11-18 20:37:01',	'GET ALL',	13,	'sarah'),
+('2017-11-18 20:37:01',	'GET',	14,	'sarah'),
+('2017-11-18 20:42:27',	'GET ALL',	15,	'sarah'),
+('2017-11-18 20:42:27',	'GET',	16,	'sarah'),
+('2017-11-18 20:43:07',	'GET ALL',	17,	'sarah'),
+('2017-11-18 20:43:07',	'GET',	18,	'sarah'),
+('2017-11-18 20:43:07',	'GET ALL',	19,	'sarah'),
+('2017-11-18 20:43:07',	'GET',	20,	'sarah'),
+('2017-11-18 20:43:08',	'GET ALL',	21,	'sarah'),
+('2017-11-18 20:43:08',	'GET',	22,	'sarah'),
+('2017-11-18 20:43:20',	'GET ALL',	23,	'sarah'),
+('2017-11-18 20:43:20',	'GET',	24,	'sarah'),
+('2017-11-18 20:46:15',	'GET ALL',	25,	'sarah'),
+('2017-11-18 20:46:15',	'GET',	26,	'sarah'),
+('2017-11-18 20:46:17',	'GET ALL',	27,	'sarah'),
+('2017-11-18 20:46:17',	'GET',	28,	'sarah'),
+('2017-11-18 20:46:49',	'GET ALL',	29,	'sarah'),
+('2017-11-18 20:46:49',	'GET',	30,	'sarah'),
+('2017-11-18 20:47:21',	'GET ALL',	31,	'sarah'),
+('2017-11-18 20:47:21',	'GET',	32,	'sarah'),
+('2017-11-18 20:47:43',	'GET ALL',	33,	'sarah'),
+('2017-11-18 20:47:43',	'GET',	34,	'sarah'),
+('2017-11-18 20:49:09',	'GET ALL',	35,	'sarah'),
+('2017-11-18 20:53:34',	'GET ALL',	36,	'sarah'),
+('2017-11-18 20:53:34',	'GET',	37,	'sarah'),
+('2017-11-18 20:55:21',	'GET ALL',	38,	'sarah'),
+('2017-11-18 20:55:21',	'GET',	39,	'sarah'),
+('2017-11-18 20:55:49',	'GET ALL',	40,	'sarah'),
+('2017-11-18 20:55:49',	'GET',	41,	'sarah'),
+('2017-11-18 20:56:12',	'GET ALL',	42,	'sarah'),
+('2017-11-18 20:56:12',	'GET',	43,	'sarah'),
+('2017-11-18 20:57:46',	'GET ALL',	44,	'sarah'),
+('2017-11-18 20:57:46',	'GET',	45,	'sarah'),
+('2017-11-18 20:58:14',	'GET ALL',	46,	'sarah'),
+('2017-11-18 20:58:14',	'GET',	47,	'sarah'),
+('2017-11-18 21:00:37',	'GET ALL',	48,	'sarah'),
+('2017-11-18 21:00:37',	'GET',	49,	'sarah'),
+('2017-11-18 21:00:37',	'POST',	50,	'sarah'),
+('2017-11-18 21:01:48',	'GET ALL',	51,	'sarah'),
+('2017-11-18 21:01:48',	'GET',	52,	'sarah'),
+('2017-11-18 21:01:48',	'POST',	53,	'sarah'),
+('2017-11-18 21:10:46',	'GET ALL',	54,	'sarah'),
+('2017-11-18 21:10:46',	'GET',	55,	'sarah'),
+('2017-11-18 21:10:46',	'POST',	56,	'sarah'),
+('2017-11-18 21:10:46',	'DELETE',	57,	'sarah'),
+('2017-11-18 21:12:23',	'GET ALL',	58,	'sarah'),
+('2017-11-18 21:12:23',	'GET',	59,	'sarah'),
+('2017-11-18 21:12:23',	'POST',	60,	'sarah'),
+('2017-11-18 21:12:23',	'DELETE',	61,	'sarah'),
+('2017-11-18 21:12:23',	'PUT',	62,	'sarah'),
+('2017-11-18 21:13:32',	'GET ALL',	63,	'sarah'),
+('2017-11-18 21:13:32',	'GET',	64,	'sarah'),
+('2017-11-18 21:13:32',	'POST',	65,	'sarah'),
+('2017-11-18 21:13:32',	'DELETE',	66,	'sarah'),
+('2017-11-18 21:13:32',	'PUT',	67,	'sarah'),
+('2017-11-18 21:15:32',	'GET ALL',	68,	'sarah'),
+('2017-11-18 21:15:32',	'GET',	69,	'sarah'),
+('2017-11-18 21:15:32',	'POST',	70,	'sarah'),
+('2017-11-18 21:15:32',	'DELETE',	71,	'sarah'),
+('2017-11-18 21:15:32',	'PUT',	72,	'sarah'),
+('2017-11-18 21:30:01',	'GET ALL',	73,	'sarah'),
+('2017-11-18 21:30:24',	'GET ALL',	74,	'sarah'),
+('2017-11-18 21:30:34',	'GET ALL',	75,	'sarah'),
+('2017-11-18 21:33:11',	'GET ALL',	76,	'sarah'),
+('2017-11-18 21:33:45',	'GET',	77,	'sarah'),
+('2017-11-18 21:51:57',	'GET ALL',	78,	'sarah'),
+('2017-11-18 21:55:30',	'GET ALL',	79,	'sarah'),
+('2017-11-18 21:57:51',	'GET',	80,	'sarah'),
+('2017-11-18 22:07:25',	'GET ALL',	81,	'sarah'),
+('2017-11-18 22:07:57',	'GET',	82,	'sarah'),
+('2017-11-18 22:10:00',	'GET',	83,	'sarah'),
+('2017-11-18 22:10:04',	'GET ALL',	84,	'sarah'),
+('2017-11-18 22:11:16',	'DELETE',	85,	'sarah'),
+('2017-11-18 22:11:23',	'DELETE',	86,	'sarah'),
+('2017-11-18 22:11:41',	'PUT',	87,	'sarah'),
+('2017-11-18 22:12:20',	'PUT',	88,	'sarah'),
+('2017-11-18 22:14:11',	'PUT',	89,	'sarah'),
+('2017-11-18 22:14:24',	'POST',	90,	'sarah'),
+('2017-11-18 22:17:40',	'GET ALL',	91,	'sarah'),
+('2017-11-18 22:28:08',	'GET ALL',	92,	'sarah'),
+('2017-11-18 22:29:42',	'GET ALL',	93,	'sarah'),
+('2017-11-18 22:30:01',	'GET ALL',	94,	'sarah'),
+('2017-11-18 22:30:13',	'GET',	95,	'sarah'),
+('2017-11-18 22:30:32',	'PUT',	96,	'sarah');
+
+INSERT INTO `students` (`id`, `name`, `email`, `created`) VALUES
+(3,	'bart simpson',	'bsimp@email.com',	'2017-10-10 23:12:05'),
+(5,	'marge simpson',	'msimpson@edu.com',	'2017-10-17 23:53:40'),
+(6,	'lisa simpson',	'lisa@edu.com',	'2017-10-17 23:54:28'),
+(8,	'Sarah',	'test@gmail.com',	'2017-11-08 00:25:45'),
+(9,	'Sarah',	'test@gmail.com',	'2017-11-08 00:26:28'),
+(10,	'sarah',	'newemail@gmail.com',	'2017-11-08 00:28:32'),
+(11,	'Sarah',	'test@gmail.com',	'2017-11-08 00:32:02'),
+(12,	'Sarah',	'test@gmail.com',	'2017-11-08 00:32:57'),
+(13,	'Sarah',	'test@gmail.com',	'2017-11-08 00:34:58'),
+(14,	'Sarah',	'test@gmail.com',	'2017-11-18 20:27:21');
+
+DROP TABLE IF EXISTS `tasks`;
+CREATE TABLE `tasks` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `desc` varchar(500) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `tasks` (`id`, `desc`) VALUES
+(2,	'New Description'),
+(3,	'do dishes'),
+(4,	'really meh task'),
+(5,	'wash windows'),
+(6,	'really meh task'),
+(9,	'really difficult task'),
+(10,	'New Awesomer Description'),
+(13,	'hello'),
+(14,	'really meh task'),
+(15,	'really difficult task'),
+(16,	'really meh task'),
+(17,	'really difficult task'),
+(18,	'really meh task'),
+(19,	'really difficult task'),
+(20,	'really meh task'),
+(21,	'really difficult task'),
+(23,	'A lovely Description'),
+(24,	'Description'),
+(25,	'cool description'),
+(26,	'cool description'),
+(27,	'cool description'),
+(28,	'cool description'),
+(29,	'cool description'),
+(30,	'cool description'),
+(31,	'cool description'),
+(32,	'cool description'),
+(33,	'cool description'),
+(34,	'test with username validation'),
+(35,	'testing counts'),
+(36,	'new task'),
+(37,	'Good Task'),
+(38,	'An awesome task'),
+(39,	'An awesome task'),
+(40,	'An awesome task'),
+(41,	'An awesome task'),
+(42,	'An awesome task'),
+(43,	'An awesome task'),
+(44,	'vacuum living room');
+
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(500) NOT NULL,
+  `password` varchar(500) NOT NULL,
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `users` (`id`, `username`, `password`, `created`) VALUES
+(2,	'sarah',	'$2y$10$ngUEZxq7abH3a1m612MjbO6Z.GVzak/XUJWIES02bD83qmMHxJapC',	'2017-11-06 23:54:37'),
+(3,	'testnew',	'$2y$10$KleL7AX0vNZihOXDDpjAFuuSN22SC9Bzm5frpttlBBbzsAsp3P34i',	'2017-11-18 22:24:50');
+
+-- 2017-11-21 22:18:11
+
