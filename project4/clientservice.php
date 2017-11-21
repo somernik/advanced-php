@@ -5,7 +5,7 @@
     $client = new GuzzleHttp\Client();
     $userManager = new UserManager();
 
-    $url = "http://localhost/Project4-first/task_services.php";
+    $url = "http://localhost/project4/task_services.php";
 
     $requestType = $_GET["submit"];
     $runRequest = true;
