@@ -99,7 +99,11 @@
 
                 $query->execute();
 
-                $results = $query->fetchAll(PDO::FETCH_CLASS, "Task"); //name of class, create returned php objects
+                //$results = $query->fetchAll(PDO::FETCH_CLASS, "Task"); //name of class, create returned php objects
+                
+                $results = $query->fetchAll(PDO::FETCH_ASSOC);
+                
+                $results = json_encode($results, JSON_PRETTY_PRINT);
                 
             } catch (Exception $ex) {
                 echo $ex->getMessage();
@@ -127,7 +131,13 @@
                 $query->bindParam(":id", $id);                
                 $query->execute();
 
-                $results = $query->fetchAll(PDO::FETCH_CLASS, "Task"); //name of class, create returned php objects
+                //$results = $query->fetchAll(PDO::FETCH_CLASS, "Task"); //name of class, create returned php objects
+
+
+                $results = $query->fetchAll(PDO::FETCH_ASSOC);
+                
+                $results = json_encode($results, JSON_PRETTY_PRINT);
+                
 
                 if (sizeof($results) != 1) {
                     throw new Exception("No task with that id");

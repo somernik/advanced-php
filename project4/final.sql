@@ -112,18 +112,6 @@ INSERT INTO `requests` (`created`, `requestType`, `id`, `username`) VALUES
 ('2017-11-18 22:30:13',	'GET',	95,	'sarah'),
 ('2017-11-18 22:30:32',	'PUT',	96,	'sarah');
 
-INSERT INTO `students` (`id`, `name`, `email`, `created`) VALUES
-(3,	'bart simpson',	'bsimp@email.com',	'2017-10-10 23:12:05'),
-(5,	'marge simpson',	'msimpson@edu.com',	'2017-10-17 23:53:40'),
-(6,	'lisa simpson',	'lisa@edu.com',	'2017-10-17 23:54:28'),
-(8,	'Sarah',	'test@gmail.com',	'2017-11-08 00:25:45'),
-(9,	'Sarah',	'test@gmail.com',	'2017-11-08 00:26:28'),
-(10,	'sarah',	'newemail@gmail.com',	'2017-11-08 00:28:32'),
-(11,	'Sarah',	'test@gmail.com',	'2017-11-08 00:32:02'),
-(12,	'Sarah',	'test@gmail.com',	'2017-11-08 00:32:57'),
-(13,	'Sarah',	'test@gmail.com',	'2017-11-08 00:34:58'),
-(14,	'Sarah',	'test@gmail.com',	'2017-11-18 20:27:21');
-
 DROP TABLE IF EXISTS `tasks`;
 CREATE TABLE `tasks` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
