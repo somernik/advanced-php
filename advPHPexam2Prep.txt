@@ -1,0 +1,9 @@
+interfaces
+PDO
+wordpress & AWS
+restful webservices
+    client perspective
+    server perspective
+
+how to pretty urls
+write client that use restful webservice
